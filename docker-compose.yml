@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+    db:
+        image: postgres:12.7-alpine
+        volumes:
+            - db:/var/lib/postgresql/data
+        restart: unless-stopped
+        environment:
+            - POSTGRES_PORT=5432
+            - POSTGRES_DB=db
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - "12001:5432"
+    db_teset:
+        image: postgres:12.7-alpine
+        volumes:
+            - db_test:/var/lib/postgresql/data
+        restart: unless-stopped
+        environment:
+            - POSTGRES_PORT=5432
+            - POSTGRES_DB=db_test
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - "12002:5432"
+
+volumes:
+    db:
+        driver: local
+    db_test:
+        driver: local
