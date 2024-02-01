@@ -5,6 +5,7 @@ use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\NoteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Spatie\Health\Http\Controllers\HealthCheckJsonResultsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::get('health', HealthCheckJsonResultsController::class);
 
 Route::prefix('v1')->group(function () {
     Route::post('login', [AuthController::class, 'login']);

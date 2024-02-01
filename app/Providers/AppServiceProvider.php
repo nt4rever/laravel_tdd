@@ -7,6 +7,8 @@ use App\Services\ImageServices\ImgbbImageService;
 use App\Services\ImageServices\SelfHostedImageService;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
+use Spatie\Health\Facades\Health;
+use Spatie\Health\Checks\Checks\DatabaseCheck;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -38,5 +40,9 @@ class AppServiceProvider extends ServiceProvider
                 return app($imageServices[$parameters['service']]);
             }
         });
+
+        Health::checks([
+            DatabaseCheck::new(),
+        ]);
     }
 }
