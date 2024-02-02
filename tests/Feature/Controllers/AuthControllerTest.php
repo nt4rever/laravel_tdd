@@ -35,20 +35,20 @@ class AuthControllerTest extends TestCase
             'email' => $user->email,
             'password' => 'password',
         ])
-        ->assertOk()
-        ->assertJsonStructure([
-            'access_token',
-            'user' => [
-                'uuid',
-                'name',
-                'email'
-            ],
-        ])
-        ->assertJsonFragment([
-            'uuid' => $user->uuid,
-            'name' => $user->name,
-            'email' => $user->email,
-        ]);
+            ->assertOk()
+            ->assertJsonStructure([
+                'access_token',
+                'user' => [
+                    'uuid',
+                    'name',
+                    'email'
+                ],
+            ])
+            ->assertJsonFragment([
+                'uuid' => $user->uuid,
+                'name' => $user->name,
+                'email' => $user->email,
+            ]);
     }
 
     public function testLogoutSuccessfully()

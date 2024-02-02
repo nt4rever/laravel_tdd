@@ -46,7 +46,14 @@ class AuthController extends APIController
      */
     public function logout(LogoutRequest $request): JsonResponse
     {
-        $request->user()->currentAccessToken()->delete();
+        /** @var User $user */
+        $user = $request->user();
+        if ($request->has('all')) {
+            $user->tokens()->delete();
+        } else {
+            $user->currentAccessToken()->delete();
+        }
+
         return $this->respondOk([]);
     }
 }

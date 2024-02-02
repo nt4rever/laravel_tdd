@@ -13,6 +13,8 @@ class LogoutRequest extends FormRequest
 
     public function rules(): array
     {
-        return [];
+        return [
+            'all' => ['nullable']
+        ];
     }
 }
