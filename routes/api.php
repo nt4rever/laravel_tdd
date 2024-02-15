@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\GroupController;
 use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\NoteController;
+use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -30,12 +32,18 @@ Route::prefix('v1')->group(function () {
 
         // Notes
         Route::resource('notes', NoteController::class)->except([
-            'create', 'edit'
+            'create',
+            'edit'
         ]);
 
         // Images
         Route::resource('images', ImagesController::class)->except([
-            'create', 'edit'
+            'create',
+            'edit'
         ]);
     });
+
+    Route::post('group', [GroupController::class, 'store']);
+    Route::post('template', [TemplateController::class, 'store']);
+    Route::get('notify', [TemplateController::class, 'notify']);
 });
