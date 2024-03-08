@@ -2,7 +2,12 @@
     "name": "sethsandaru/kiva-laravel-tdd",
     "type": "project",
     "description": "KivaNote - Laravel TDD sample project",
-    "keywords": ["framework", "laravel", "laravel tdd", "write unit test laravel"],
+    "keywords": [
+        "framework",
+        "laravel",
+        "laravel tdd",
+        "write unit test laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.0",
@@ -15,6 +20,7 @@
         "spatie/laravel-health": "^1.24"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.13",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
@@ -55,7 +61,9 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "barryvdh/laravel-ide-helper"
+            ]
         }
     },
     "config": {

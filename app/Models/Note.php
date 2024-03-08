@@ -14,6 +14,7 @@ use Illuminate\Support\Collection;
 
 /**
  * Class Note
+ *
  * @property int $id
  * @property string $uuid
  * @property int $user_id
@@ -24,6 +25,22 @@ use Illuminate\Support\Collection;
  * @property User $user
  * @property Collection|NoteContent[] $contents
  * @mixin EloquentBuilderMixin
+ * @property-read int|null $contents_count
+ * @method static \Database\Factories\NoteFactory factory(...$parameters)
+ * @method static \Illuminate\Database\Eloquent\Builder|Note newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Note newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Note onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Note query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Note whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Note whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Note whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Note whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Note whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Note whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Note whereUuid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Note withTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Note withoutTrashed()
+ * @mixin \Eloquent
  */
 class Note extends Model
 {

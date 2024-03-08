@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * Class Image
+ *
  * @property int $id
  * @property string $uuid
  * @property int $user_id
@@ -22,6 +23,20 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property Carbon $updated_at
  * @property User $user
  * @mixin EloquentBuilderMixin
+ * @method static \Database\Factories\ImageFactory factory(...$parameters)
+ * @method static \Illuminate\Database\Eloquent\Builder|Image newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Image newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Image query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Image whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Image whereFilename($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Image whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Image wherePayload($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Image whereService($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Image whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Image whereUrl($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Image whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Image whereUuid($value)
+ * @mixin \Eloquent
  */
 class Image extends Model
 {

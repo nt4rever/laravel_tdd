@@ -11,12 +11,27 @@ use App\Services\Traits\EloquentBuilderMixin;
 
 /**
  * Class Image
+ *
  * @property int $id
  * @property string $uuid
  * @property array<int> $groups
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @mixin EloquentBuilderMixin
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @method static \Illuminate\Database\Eloquent\Builder|Template newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Template newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Template onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Template query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Template whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Template whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Template whereGroups($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Template whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Template whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Template whereUuid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Template withTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Template withoutTrashed()
+ * @mixin \Eloquent
  */
 class Template extends Model
 {

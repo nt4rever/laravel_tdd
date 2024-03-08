@@ -11,6 +11,7 @@ use App\Services\Traits\EloquentBuilderMixin;
 
 /**
  * Class Image
+ *
  * @property int $id
  * @property string $uuid
  * @property int $type
@@ -19,6 +20,22 @@ use App\Services\Traits\EloquentBuilderMixin;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @mixin EloquentBuilderMixin
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @method static \Illuminate\Database\Eloquent\Builder|Group newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Group newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Group onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Group query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Group whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Group whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Group whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Group whereRequiredAmount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Group whereType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Group whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Group whereUsers($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Group whereUuid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Group withTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Group withoutTrashed()
+ * @mixin \Eloquent
  */
 class Group extends Model
 {
