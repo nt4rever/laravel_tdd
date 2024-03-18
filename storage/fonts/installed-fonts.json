@@ -1,0 +1,8 @@
+{
+    "notosansjp-regular": {
+        "normal": "D:\\Training\\kiva-laravel-tdd\\vendor\\dompdf\\dompdf\/lib\/fonts\/NotoSansJP-Regular",
+        "bold": "D:\\Training\\kiva-laravel-tdd\\vendor\\dompdf\\dompdf\/lib\/fonts\/NotoSansJP-Regular",
+        "italic": "D:\\Training\\kiva-laravel-tdd\\vendor\\dompdf\\dompdf\/lib\/fonts\/NotoSansJP-Regular",
+        "bold_italic": "D:\\Training\\kiva-laravel-tdd\\vendor\\dompdf\\dompdf\/lib\/fonts\/NotoSansJP-Regular"
+    }
+}
