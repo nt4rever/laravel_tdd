@@ -39,11 +39,15 @@ class MakePDF extends Command
     public function handle()
     {
         $start = microtime(true);
+
         $pdf = Pdf::setOptions([
             'isFontSubsettingEnabled' => true,
+            'fontDir' => storage_path('fonts'),
+            'fontCache' => storage_path('fonts'),
         ]);
         $pdf->loadView('pdf.report');
         $pdf->save(public_path('archives/test.pdf'));
+
         $end = microtime(true);
         $time = $end - $start;
         $this->info("$time");
