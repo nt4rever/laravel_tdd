@@ -44,6 +44,7 @@ class MakePDF extends Command
             'isFontSubsettingEnabled' => true,
             'fontDir' => storage_path('fonts'),
             'fontCache' => storage_path('fonts'),
+            'enable_php' => true,
         ]);
         $pdf->loadView('pdf.report');
         $pdf->save(public_path('archives/test.pdf'));
