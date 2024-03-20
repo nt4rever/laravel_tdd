@@ -4,5 +4,11 @@
         "bold": "NotoSansJP-Regular",
         "italic": "NotoSansJP-Regular",
         "bold_italic": "NotoSansJP-Regular"
+    },
+    "mincho": {
+        "normal": "fonts-japanese-mincho",
+        "bold": "fonts-japanese-mincho",
+        "italic": "fonts-japanese-mincho",
+        "bold_italic": "fonts-japanese-mincho"
     }
 }

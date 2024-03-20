@@ -45,5 +45,5 @@ Route::prefix('v1')->group(function () {
 
     Route::post('group', [GroupController::class, 'store']);
     Route::post('template', [TemplateController::class, 'store']);
-    Route::get('notify', [TemplateController::class, 'notify']);
+    Route::get('notify', [TemplateController::class, 'notify'])->middleware('withTransaction');
 });

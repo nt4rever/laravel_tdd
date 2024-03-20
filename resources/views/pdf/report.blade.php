@@ -3,7 +3,7 @@
 <head>
     <style>
         body {
-            font-family: "notosansjp", sans-serif;
+            font-family: "mincho", sans-serif;
             font-size: 10px;
         }
 
@@ -23,8 +23,7 @@
 
 <body>
     <h2>Collapsed Borders</h2>
-    <p>重調＠CITY同様、角印を追加できるようにする。
-    </p>
+    <p style="font-weight: bold">重調</p>
 
     <table style="width:100%">
         <tr>
