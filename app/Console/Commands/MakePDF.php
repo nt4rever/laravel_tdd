@@ -47,7 +47,11 @@ class MakePDF extends Command
             'enable_php' => true,
         ]);
         $pdf->loadView('pdf.report');
-        $pdf->save(public_path('archives/test.pdf'));
+        // $pdf->loadView('pdf.invoice');
+        // $pdf->loadView('pdf.table');
+        $pdf->save(public_path('archives/report.pdf'));
+        // $pdf->save(public_path('archives/invoice.pdf'));
+        // $pdf->save(public_path('archives/table.pdf'));
 
         $end = microtime(true);
         $time = $end - $start;
