@@ -26,7 +26,7 @@ class TemplateController extends APIController
     public function notify(Request $request)
     {
         $notification = new PushNotification();
-        $message = $notification->notify($request->input('token'), '', '');
+        $message = $notification->notify($request->token, '', '');
 
         return $this->respondOk([
             'message' => $message,
