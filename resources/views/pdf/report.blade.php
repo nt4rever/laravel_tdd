@@ -3,7 +3,7 @@
 <head>
     <style>
         body {
-            font-family: "mplus1", sans-serif;
+            font-family: "notosansjp", sans-serif;
             font-size: small;
         }
 
@@ -33,6 +33,9 @@
         人間が専制と圧迫とに対する最後の手段として反逆に訴えることがないようにするためには、法の支配によって人権を保護することが肝要であるので、
         諸国間の友好関係の発展を促進することが肝要であるので、国際連合の諸国民は、国連憲章において、基本的人権、人間の尊厳及び価値並びに男女の同権についての信念を再確認し、かつ、一層大きな自由のうちで社会的進歩と生活水準の向上とを促進することを決意したので、
     </p>
+    <p>"〇〇様ご訪問。書類コピー、配布を依頼。樹木伐採作業
+        / Ông/bà 〇〇 đã ghé thăm. Request copy tài liệu, phân phát. Công việc chặt cây"
+        </p>
 
     <table border="1px" style="width:100%; border-collapse: collapse; table-layout: fixed;">
         <thead>
